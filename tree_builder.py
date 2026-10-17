@@ -71,7 +71,7 @@ class TeamTree:
                 return
 
         indent = "    " * level
-        print(f"-{node.name}")
+        print(f"{indent}-{node.name}")
 
         self.print_tree(node.left, level + 1)
         self.print_tree(node.right, level + 1)
